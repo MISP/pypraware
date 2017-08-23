@@ -12,7 +12,7 @@ from base64 import b64encode
 # hash and crypto import
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.kdf.hkdf import HKDF
+from cryptography.hazmat.primitives.kdf.hkdf import HKDF as Crypto_HKDF
 
 class HKDF(Crypto):
     def __init__(self, conf, metadata=None):
@@ -28,7 +28,7 @@ class HKDF(Crypto):
         Generate the key used for encryption
         """
         passToken = bpassword + self.btoken
-        hkdf = HKDF(
+        hkdf = Crypto_HKDF(
             algorithm=hashes.SHA256(),
             length=32,
             salt=bsalt,

@@ -14,7 +14,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='pypraware',
 
-    version='0.1.5',
+    version='0.1.8',
 
     description='Privacy aware library for MISP module',
     long_description=long_description,
@@ -27,7 +27,7 @@ setup(
     author_email='charles.jacquet7@gmail.com',
 
     # Choose your license
-    license='GNU Affero General Public License v3.0',
+    license='GNU Affero General Public License v3',
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -41,7 +41,7 @@ setup(
         'Intended Audience :: Developers',
 
         # Pick your license as you wish (should match "license" above)
-        'License :: OSI Approved :: GNU GENERAL PUBLIC LICENSE v03 License',
+        'License :: OSI Approved :: GNU Affero General Public License v3',
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
